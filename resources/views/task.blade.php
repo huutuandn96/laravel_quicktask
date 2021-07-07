@@ -75,9 +75,10 @@
 
                                         <td>
                                             <!-- TODO: Delete Button -->
-                                            <form action="" method="POST">
+                                            <form action="{{ route('task.destroy', ['task' => $task->id]) }}" method="POST">
                                                 @csrf
-                                    
+                                                @method('delete')
+
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-trash"></i> @lang('task.deleteTask')
                                                 </button>

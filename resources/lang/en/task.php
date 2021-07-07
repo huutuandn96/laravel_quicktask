@@ -13,5 +13,6 @@ return [
     'nameUnique' => 'This task name is already exists',
     'enterTaskInput' => 'Enter your task',
     'errorAlert' => 'Whoops! Something went wrong!',
+    'delTaskSuccess' => 'Delete task successfully',
     
 ];

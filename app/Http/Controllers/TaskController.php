@@ -21,6 +21,13 @@ class TaskController extends Controller
         $task->name = $request->name;
         $task->save();
 
-        return redirect()->route('task.store')->with('message', trans('task.addTaskSuccess'));
+        return redirect()->route('task.index')->with('message', trans('task.addTaskSuccess'));
+    }
+
+    public function destroy(Task $task)
+    {
+        $task->delete();
+
+        return redirect()->route('task.index')->with('message', trans('task.delTaskSuccess'));
     }
 }
