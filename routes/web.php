@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/task', [TaskController::class, 'index'])->name('task.index');
+Route::resource('task', TaskController::class)->only(['index', 'store']);
