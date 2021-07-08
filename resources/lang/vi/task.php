@@ -13,5 +13,6 @@ return [
     'nameUnique' => 'Công việc này đã tồn tại',
     'enterTaskInput' => 'Nhập vào công việc',
     'errorAlert' => 'Đã có lỗi xảy ra',
+    'delTaskSuccess' => 'Xóa công việc thành công',
     
 ];
