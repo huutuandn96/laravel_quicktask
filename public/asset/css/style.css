@@ -1,3 +1,8 @@
-#new-task-box {
+#new-task-box,
+#current-task-box {
   margin-top: 30px;
+}
+
+#current-task-box .delete-btn {
+  width: 200px;
 }
